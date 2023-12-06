@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laboratorio_API</string>
+    <string name="btn_add">Add</string>
+
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="message_delete_patient">"Are you sure you want to delete this item?"</string>
+</resources>
