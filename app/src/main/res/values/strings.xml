@@ -3,6 +3,9 @@
     <string name="btn_add">Add</string>
 
     <string name="btn_delete">Eliminar</string>
-    <string name="btn_cancel">Cancel</string>
-    <string name="message_delete_patient">"Are you sure you want to delete this item?"</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="message_delete_patient">"¿Estás segura de que quieres eliminar este artículo?"</string>
+    <string name="api_error">Hay un problema con el recurso.</string>
+    <string name="api_instruction">Presione el botón Obtener información</string>
+    <string name="btn_getinfo">Conseguir información</string>
 </resources>

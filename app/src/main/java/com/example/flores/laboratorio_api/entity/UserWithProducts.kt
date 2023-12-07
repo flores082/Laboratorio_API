@@ -1,4 +1,4 @@
-package cl.mmoscoso.practice.entity
+package com.example.flores.laboratorio_api.entity
 
 import androidx.room.Embedded
 import androidx.room.Relation

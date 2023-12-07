@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import cl.mmoscoso.practice.entity.Patient
+import com.example.flores.laboratorio_api.entity.Patient
 
 class PatientRegistrationActivity : AppCompatActivity() {
 

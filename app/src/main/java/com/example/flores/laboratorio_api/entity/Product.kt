@@ -1,4 +1,4 @@
-package cl.mmoscoso.practice.entity
+package com.example.flores.laboratorio_api.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

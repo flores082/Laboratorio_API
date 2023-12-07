@@ -1,4 +1,4 @@
-package cl.mmoscoso.practice.entity
+package com.example.flores.laboratorio_api.entity
 
 import android.os.Parcel
 import android.os.Parcelable

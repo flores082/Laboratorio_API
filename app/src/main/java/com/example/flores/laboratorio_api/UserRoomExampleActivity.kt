@@ -1,7 +1,6 @@
 package com.example.flores.laboratorio_api
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.ContextMenu
@@ -12,12 +11,13 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
-import cl.mmoscoso.practice.adapters.UserNewDialog
-import cl.mmoscoso.practice.database.AppDatabase
-import cl.mmoscoso.practice.entity.Product
-import cl.mmoscoso.practice.entity.User
-import cl.mmoscoso.practice.entity.UserWithProducts
+import com.example.flores.laboratorio_api.adapters.UserNewDialog
+import com.example.flores.laboratorio_api.database.AppDatabase
+import com.example.flores.laboratorio_api.entity.Product
+import com.example.flores.laboratorio_api.entity.User
+import com.example.flores.laboratorio_api.entity.UserWithProducts
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class UserRoomExampleActivity : AppCompatActivity() {
@@ -29,7 +29,6 @@ class UserRoomExampleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_room_example)
-        // Initialize UI elements
         listViewUsers = findViewById(R.id.listViewUsers)
 
 
@@ -85,7 +84,6 @@ class UserRoomExampleActivity : AppCompatActivity() {
             }
 
             R.id.action_edit -> {
-                // Handle the "Edit" option
                 val intent = Intent(this, PatientEditActivity::class.java)
                 val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
                 val position = info.position
@@ -95,8 +93,6 @@ class UserRoomExampleActivity : AppCompatActivity() {
                 true
             }
             R.id.action_delete -> {
-                // Handle the "Delete" option
-                // Show the confirmation dialog when "Delete" is selected
                 val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
                 val position = info.position
                 Toast.makeText(this,"User:"+position.toString(), Toast.LENGTH_LONG).show()
@@ -105,7 +101,6 @@ class UserRoomExampleActivity : AppCompatActivity() {
             }
 
             R.id.action_new_product -> {
-                // Handle the "new product" option
                 val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
                 val position = info.position
                 Toast.makeText(this,"User:"+position.toString(), Toast.LENGTH_LONG).show()
@@ -121,7 +116,6 @@ class UserRoomExampleActivity : AppCompatActivity() {
                 refreshFromDatabase()
                 true
             }
-            // Add cases for other options as needed
             else -> {
                 super.onContextItemSelected(item)
             }

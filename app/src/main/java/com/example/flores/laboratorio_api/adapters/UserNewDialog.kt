@@ -1,4 +1,4 @@
-package cl.mmoscoso.practice.adapters
+package com.example.flores.laboratorio_api.adapters
 
 import android.app.Dialog
 import android.content.Context
@@ -7,10 +7,10 @@ import android.view.Window
 import android.widget.Button
 import android.widget.EditText
 import androidx.room.Room
-import cl.mmoscoso.practice.database.AppDatabase
-import cl.mmoscoso.practice.entity.User
 import com.example.flores.laboratorio_api.R
 import com.example.flores.laboratorio_api.UserRoomExampleActivity
+import com.example.flores.laboratorio_api.database.AppDatabase
+import com.example.flores.laboratorio_api.entity.User
 
 class UserNewDialog(
     context: Context,

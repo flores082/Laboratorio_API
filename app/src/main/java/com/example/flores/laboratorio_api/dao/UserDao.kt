@@ -1,12 +1,12 @@
-package cl.mmoscoso.practice.dao
+package com.example.flores.laboratorio_api.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Transaction
-import cl.mmoscoso.practice.entity.User
-import cl.mmoscoso.practice.entity.UserWithProducts
+import com.example.flores.laboratorio_api.entity.User
+import com.example.flores.laboratorio_api.entity.UserWithProducts
 
 
 @Dao
